@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Poppins:wght@200;300;400;500&display=swap');
+
+:root {
+    --font-main:  'Poppins', sans-serif;
+    --font-secundary: 'Dosis', sans-serif;
+    --color-background: #172026;
+    --color-font: #5FCDD9;
+    --color-button: #027373;
+    --color-hoverButton: #04BF9D;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: var(--color-background);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header >  img {
+   height: 8em;
+   padding: 1em;
+}
+
+.header >  h1 {
+    font-family: var(--font-main);
+    color: var(--color-font);
+}
+
+.header > p {
+    font-family: var(--font-secundary);
+    color: var(--color-hoverButton);
+    letter-spacing: 0.2em;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main > a {
+    margin: 0.5em;
+}
+
+.main > a > .linkedin {
+    padding: 1em 2em 1em 2em;
+    background: var(--color-button);
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+}
+
+.main > a > .linkedin:hover {
+    background: var(--color-hoverButton);
+}
+
+.main > a > .github {
+    padding: 1em 2.2em 1em 2.2em;
+    background: var(--color-button);
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+}
+
+.main > a > .github:hover {
+    background: var(--color-hoverButton);
+}
+
+.main > a > .portfolio {
+    padding: 1em 1.9em 1em 1.9em;
+    background: var(--color-button);
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+}
+
+.main > a > .portfolio:hover {
+    background: var(--color-hoverButton);
+}
+
+.main > a > .instagram {
+    padding: 1em 1.3em 1em 1.3em;
+    background: var(--color-button);
+    font-family: var(--font-main);
+    border: none;
+    cursor: pointer;
+}
+
+.main > a > .instagram:hover {
+    background: var(--color-hoverButton);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    font-family: var(--font-secundary);
+    color: var(--color-font);
+}
+
+.footer > p > mark {
+    background: transparent;
+    color: var(--color-button);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 360px) {
+    .footer {
+        margin-top: 15em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header >  img {
+        height: 14em;
+        padding: 2em;
+     }
+
+     .header >  h1 {
+        font-size: 3em;
+    }
+    
+    .header > p {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .main > a > .linkedin {
+        padding: 2em 3em 2em 3em;
+    }
+    .main > a > .github {
+        padding: 2em 3.2em 2em 3.2em;
+    }
+    .main > a > .portfolio {
+        padding: 2em 2.9em 2em 2.9em;
+    }
+    .main > a > .instagram {
+        padding: 2em 2.3em 2em 2.3em;
+    }
+
+    .footer {
+        margin-top: 10em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header >  img {
+        height: 12em;
+        padding: 1em;
+     }
+
+     .footer {
+        margin-top: 1em;
+     }
+}
+
+
